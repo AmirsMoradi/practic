@@ -1,0 +1,24 @@
+import random
+import math
+import datetime
+
+
+def quiz():
+    num = random.randint(1, 100)
+    print("random number:", num)
+    start = datetime.datetime.now()
+    a = int(input("enter sqrt  of num:"))
+    v = math.sqrt(num)
+    print(v)
+    end = datetime.datetime.now()
+    time_taken = end - start
+    print(time_taken)
+    if time_taken.seconds > 10 and a != v:
+        print("game over not winner")
+    elif time_taken.seconds < 10 and a == v:
+        print("game over you are winner")
+    else:
+        print("game over")
+
+
+quiz()
