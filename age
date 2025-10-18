@@ -1,0 +1,15 @@
+age = 25
+
+
+if age <= 3 :
+    print("child")
+if 3 < age <= 10 :
+    print("kid")
+if 10 < age <= 20:
+    print("teen")
+if 20 < age <= 40 :
+    print("young")
+else:
+    print("old")
+
+
